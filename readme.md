@@ -1,39 +1,40 @@
-📺 Videotube
+# 📺 Videotube
+
 A scalable, YouTube-style video platform backend with features including user management, video tracking, secure authentication, and cloud-based media handling.
 
-🚀 Project Overview
+---
+
+## 🚀 Project Overview
+
 Videotube is a backend project that simulates core functionalities of a video-sharing platform. It features robust user authentication, video upload and management, and secure API handling, using industry-standard backend practices.
 
-🛠️ Tech Stack
-Backend: Node.js, Express.js
+---
 
-Database: MongoDB (Mongoose ODM)
+## 🛠️ Tech Stack
 
-Cloud Storage: Cloudinary
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Mongoose ODM)  
+- **Cloud Storage:** Cloudinary  
+- **Authentication:** JWT (JSON Web Tokens)  
+- **API Security:** Token-based Authentication, Role-based Authorization  
 
-Authentication: JWT (JSON Web Tokens)
+---
 
-API Security: Token-based Authentication, Role-based Authorization
+## 📂 Features
 
-📂 Features
-🔐 User Authentication and Authorization (JWT)
+- 🔐 User Authentication and Authorization (JWT)
+- 👤 Profile Management and Subscription System
+- 🎥 Video Upload, Storage (Cloudinary), and Tracking
+- 🔍 Video Search and Sorting
+- 🛡️ Secure API Endpoints with Token Validation
+- 🗃️ Scalable MongoDB Database Schema
+- 🛠️ Backend Optimizations and Modular API Design
 
-👤 Profile Management and Subscription System
+---
 
-🎥 Video Upload, Storage (Cloudinary), and Tracking
+## 🏗️ Project Structure
 
-🔍 Video Search and Sorting
-
-🛡️ Secure API Endpoints with Token Validation
-
-🗃️ Scalable MongoDB Database Schema
-
-🛠️ Backend Optimizations and Modular API Design
-
-🏗️ Project Structure
-plaintext
-Copy
-Edit
+```
 ├── controllers/
 ├── models/
 ├── routes/
@@ -43,60 +44,65 @@ Edit
 ├── app.js
 ├── .env
 └── package.json
-⚙️ Installation & Setup
-Clone the Repository
+```
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/videotube.git
-cd videotube
-Install Dependencies
+---
 
-bash
-Copy
-Edit
-npm install
-Set Up Environment Variables
-Create a .env file in the root directory:
+## ⚙️ Installation & Setup
 
-ini
-Copy
-Edit
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-Run the Server
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/videotube.git
+   cd videotube
+   ```
 
-bash
-Copy
-Edit
-npm run dev
-📡 API Endpoints Overview
-Endpoint	Method	Description
-/api/auth/register	POST	Register a new user
-/api/auth/login	POST	User login and token issue
-/api/videos/upload	POST	Upload new video
-/api/videos/:id	GET	Get video details
-/api/users/:id/subscribe	POST	Subscribe to a channel
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-(Add more as per your detailed API design)
+3. **Set Up Environment Variables**  
+   Create a `.env` file in the root directory:
+   ```
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+   ```
 
-📈 Future Improvements
-Implement video streaming service
+4. **Run the Server**
+   ```bash
+   npm run dev
+   ```
 
-Add comment and like functionality
+---
 
-Build frontend using React.js for a complete web app
+## 📡 API Endpoints Overview
 
-Integrate video processing (compression, format conversion)
+| Endpoint                 | Method | Description                |
+|--------------------------|--------|----------------------------|
+| /api/auth/register       | POST   | Register a new user        |
+| /api/auth/login          | POST   | User login and token issue |
+| /api/videos/upload       | POST   | Upload new video           |
+| /api/videos/:id          | GET    | Get video details          |
+| /api/users/:id/subscribe | POST   | Subscribe to a channel     |
 
-✨ Acknowledgments
-MongoDB & Mongoose documentation
+*(Add more as per your detailed API design)*
 
-Cloudinary media storage APIs
+---
 
-JWT Authentication references
+## 📈 Future Improvements
 
+- Implement video streaming service
+- Add comment and like functionality
+- Build frontend using React.js for a complete web app
+- Integrate video processing (compression, format conversion)
+
+---
+
+## ✨ Acknowledgments
+
+- MongoDB & Mongoose documentation
+- Cloudinary media storage APIs
+- JWT Authentication references
